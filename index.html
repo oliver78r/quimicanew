@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web Modern</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#tipos" class="dropdown-btn">Tipos</a>
+                    <ul class="dropdown-content">
+                        <li><a onclick="openModal('quimica-organica')">Química Orgánica</a></li>
+                        <li><a onclick="openModal('quimica-inorganica')">Química Inorgánica</a></li>
+                        <li><a onclick="openModal('quimica-fisica')">Química Física</a></li>
+                        <li><a onclick="openModal('quimica-analitica')">Química Analítica</a></li>
+                        <li><a onclick="openModal('quimica-ambiental')">Química Ambiental</a></li>
+                        <li><a onclick="openModal('quimica-industrial')">Química Industrial</a></li>
+                        <li><a onclick="openModal('bioquimica')">Bioquímica</a></li>
+                    </ul>
+                </li>
+                <li><a href="#juegos">Sobre Nosotros</a></li>
+                <li><a href="#juegos">Juegos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Hero (inicio con imagen de fondo) -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Ramas de la Química</h1>
+            <p>Encuentra todo lo que necesitas con un solo clic</p>
+            <button onclick="window.location.href=''">MÁS</button>
+        </div>
+    </section>
+
+        <!-- Sección de Juegos -->
+        <section id="juegos">
+            <h2>Juegos Educativos de Química</h2>
+            <p>Disfruta y aprende jugando con estos juegos interactivos de química.</p>
+            <div class="games-container">
+                <button onclick="window.open('https://puzzlefactory.com/es/rompecabezas-juegos/276426-quimica-organica-rompecabezas#4x4', '_blank')">ROMPECABEZAS</button>
+                <button onclick="window.open('https://wordwall.net/es-es/community/laberinto-quimica', '_blank')">LABERINTO</button>
+                <button onclick="window.open('https://es.educaplay.com/recursos-educativos/839156-ramas_de_la_quimica.html', '_blank')">SOPA DE LETRAS</button>
+                <button onclick="window.open('https://www.cerebriti.com/juegos-de-ciencias/ramas-de-la-quimica', '_blank')">PREGUNTAS</button>
+                <button onclick="window.open('https://wordwall.net/es/resource/28288015/qu%c3%admica/memorama-de-qu%c3%admica', '_blank')">MEMORAMA</button>
+            </div>
+        </section>
+
+
+        <div>
+            <!-- Modales para cada tipo de química -->
+            <div id="quimica-organica" style="display: none;" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('quimica-organica')">&times;</span>
+                    <div class="modal-body">
+                        <img src="1.jpg" alt="Imagen de Química Orgánica" class="modal-image">
+                        <div class="modal-text">
+                            <h2>Química Orgánica</h2>
+                            <p>La química orgánica es la rama de la química que se encarga del estudio de los compuestos que contienen carbono, en combinación con otros elementos, principalmente hidrógeno, oxígeno, nitrógeno, azufre, y halógenos.</p>
+                            <br><br>
+                            <p>Estos compuestos, conocidos como compuestos orgánicos, son la base de toda la vida en la Tierra y se encuentran en cosas tan diversas como alimentos, combustibles, medicamentos, y plásticos. La química orgánica tiene aplicaciones muy amplias en la vida cotidiana y en diversas industrias debido a la gran variedad de compuestos que estudia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="quimica-inorganica" style="display: none;" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('quimica-inorganica')">&times;</span>
+                    <div class="modal-body">
+                        <img src="2.jpg" alt="Imagen de Química Inorgánica" class="modal-image">
+                        <div class="modal-text">
+                            <h2>Química Inorgánica</h2>
+                            <p>La química inorgánica es la rama de la química que estudia los compuestos y elementos no basados principalmente en el carbono (aunque incluye algunos compuestos simples de carbono, como los óxidos de carbono, carbonatos y cianuros). Se enfoca en el estudio de metales, no metales, metaloides, minerales y compuestos que no contienen enlaces C-H como los presentes en la química orgánica.</p>
+                            <br><br>
+                            <p>La química inorgánica tiene aplicaciones fundamentales en muchos campos de la industria, la tecnología y la vida cotidiana debido a la amplia variedad de compuestos inorgánicos.</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="quimica-fisica" style="display: none;" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('quimica-fisica')">&times;</span>
+                    <div class="modal-body">
+                        <img src="3.jpg" alt="Imagen de Química Física" class="modal-image">
+                        <div class="modal-text">
+                            <h2>Química Física</h2>
+                            <p>La química física es una rama de la química que combina principios de química, física y matemáticas para estudiar los principios fundamentales que rigen las propiedades y el comportamiento de la materia, así como las transformaciones químicas. Analiza los sistemas químicos desde una perspectiva cuantitativa, considerando aspectos como la energía, la dinámica molecular y los estados de la materia.</p>
+                            <br><br>
+                            <p>La química física tiene aplicaciones fundamentales en una amplia variedad de áreas industriales, tecnológicas, ambientales y científicas. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="quimica-analitica" style="display: none;" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('quimica-analitica')">&times;</span>
+                    <div class="modal-body">
+                        <img src="4.jpg" alt="Imagen de Química Analítica" class="modal-image">
+                        <div class="modal-text">
+                            <h2>Química Analítica</h2>
+                            <p>La química analítica es la rama de la química dedicada al estudio y desarrollo de técnicas para identificar, cuantificar y caracterizar la composición química de sustancias y materiales. Se divide en dos áreas principales: análisis cualitativo, que identifica los componentes de una muestra, y análisis cuantitativo, que determina las cantidades precisas de esos componentes.</p>
+                            <br><br>
+                            <p>La química analítica se usa en una amplia variedad de campos gracias a su capacidad para identificar y cuantificar sustancias químicas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="quimica-ambiental" style="display: none;" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('quimica-ambiental')">&times;</span>
+                    <div class="modal-body">
+                        <img src="5.jpg" alt="Imagen de Química Ambient" class="modal-image">
+                        <div class="modal-text">
+                            <h2>Química Ambiental</h2>
+                            <p>La química ambiental estudia las interacciones químicas en el medio ambiente, incluyendo el aire, el agua, el suelo y los seres vivos. Su objetivo principal es comprender y mitigar los efectos de los contaminantes químicos y desarrollar soluciones sostenibles para proteger los ecosistemas.</p>
+                            <br><br>
+                            <p>La química ambiental se utiliza principalmente para estudiar y controlar los efectos de los contaminantes químicos en el medio ambiente. Se aplica en la monitorización de la calidad del aire, el agua y el suelo, detectando sustancias peligrosas como metales pesados, productos químicos industriales y contaminantes orgánicos. Además, se usa en el tratamiento de aguas residuales, tanto industriales como domésticas, mediante procesos químicos y físicos para eliminar contaminantes y permitir la reutilización del agua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="quimica-industrial" style="display: none;" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('quimica-industrial')">&times;</span>
+                    <div class="modal-body">
+                        <img src="6.png" alt="Imagen de Química Industrial" class="modal-image">
+                        <div class="modal-text">
+                            <h2>Química Industrial</h2>
+                            <p>La química industrial aplica los principios de la química en la producción a gran escala de productos químicos y materiales. Es una disciplina clave en el desarrollo de procesos eficientes, económicos y sostenibles para satisfacer las necesidades de la sociedad.</p>
+                            <br><br>
+                            <p>la química industrial se utiliza en la producción masiva de productos químicos y materiales esenciales para la industria. Se aplica en la fabricación de plásticos, productos farmacéuticos, fertilizantes y materiales de construcción. En la industria petroquímica, la química industrial es fundamental para procesar el petróleo y gas natural, obteniendo productos como gasolina, queroseno y plásticos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="bioquimica" style="display: none;" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('bioquimica')">&times;</span>
+                    <div class="modal-body">
+                        <img src="7.jpg" alt="Imagen de Bioquímica" class="modal-image">
+                        <div class="modal-text">
+                            <h2>Bioquímica</h2>
+                            <p>La bioquímica es la rama de la ciencia que estudia las sustancias químicas, los procesos bioquímicos y las reacciones que ocurren dentro de los seres vivos. Se centra en entender las moléculas que constituyen las células y los mecanismos químicos que permiten que estas moléculas interactúen y se conviertan en los procesos vitales que mantienen la vida. </p>
+                            <br><br>
+                            <p>La bioquímica tiene numerosas aplicaciones prácticas en distintos campos, especialmente en la medicina, la biotecnología, la farmacología y la investigación científica.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <footer>
+            <p>© 2024 while swimming | Proyecto Final</p>
+            <div class="social-icons">
+                <a href="https://www.whatsapp.com" target="_blank" title="Facebook">
+                    <img src="w.png" alt="whatsapp">
+                </a>
+                <a href="https://www.Facebook.com" target="_blank" title="Twitter">
+                    <img src="f.png" alt="Facebook">
+                </a>
+
+                <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                    <img src="i.png" alt="Instagram">
+                </a>
+            </div>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
