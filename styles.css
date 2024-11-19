@@ -1,3 +1,4 @@
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -23,10 +24,12 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 20px;
     position: relative;
 }
@@ -46,7 +49,7 @@ nav ul li a:hover {
     display: none;
     position: absolute;
     background-color: rgb(78, 89, 236);
-    margin: 0 500px;
+    margin: 0;
     z-index: 1;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
@@ -70,14 +73,14 @@ nav ul li a:hover {
 /* Hero */
 #hero {
     height: 100vh;
-    background-image: url('g.jpeg'); /* Cambia por tu imagen */
+    background-image: url('g.jpeg');
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: black; /* Texto negro */
+    color: black;
 }
 
 .hero-content h1 {
@@ -145,15 +148,13 @@ nav ul li a:hover {
 }
 
 .modal-image {
-    width: 35%; /* Ajusta según el espacio que quieras que ocupe */
+    width: 35%;
     max-width: 200px;
     border-radius: 8px;
 }
 
-
-
 .modal-text {
-    flex: 1; /* Toma el espacio restante */
+    flex: 1;
     text-align: left;
     line-height: 1.6;
 }
@@ -206,6 +207,7 @@ footer {
 .hidden {
     display: none;
 }
+
 .social-icons {
     display: flex;
     justify-content: center;
@@ -234,4 +236,83 @@ footer {
 .social-icons a:hover {
     background-color: #003366;
     transform: scale(1.1);
+}
+
+/* Media Queries para pantallas pequeñas (móviles y tabletas) */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .modal-body {
+        flex-direction: column;
+    }
+
+    .modal-image {
+        width: 100%;
+        max-width: none;
+    }
+
+    .modal-text {
+        text-align: center;
+    }
+
+    #juegos {
+        padding: 20px;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Media Queries para pantallas más pequeñas (móviles en orientación vertical) */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+
+    .modal-content {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .modal-body {
+        flex-direction: column;
+    }
+
+    .modal-image {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .modal-text {
+        text-align: center;
+    }
 }
