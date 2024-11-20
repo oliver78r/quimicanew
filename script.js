@@ -20,3 +20,6 @@ window.onclick = function(event) {
         event.target.style.display = 'none';
     }
 }
+document.addEventListener('DOMContentLoaded', () => {
+    document.body.style.overflow = 'hidden'; // Desactiva el scroll desde el inicio
+});
