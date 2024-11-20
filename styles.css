@@ -182,7 +182,7 @@ nav ul li a:hover {
 button {
     padding: 10px 20px;
     margin: 10px;
-    background-color: #e2e61f;
+    background-color: #265c80;
     color: white;
     border: none;
     border-radius: 10px;
@@ -191,9 +191,7 @@ button {
     transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #003366;
-}
+
 
 /* Pie de página */
 footer {
